@@ -1,0 +1,12 @@
+[versions]
+graalvm-native = "0.10.5"
+graalvm-python = "24.1.2"
+graalvm-polyglot = "24.1.2"
+
+[libraries]
+graalvm-polyglot = { module = "org.graalvm.polyglot:polyglot", version.ref = "graalvm-polyglot" }
+graalvm-python = { module = "org.graalvm.polyglot:python-community", version.ref = "graalvm-polyglot" }
+
+[plugins]
+graalvm-native = { id = "org.graalvm.buildtools.native", version.ref = "graalvm-native" }
+graalvm-python = { id = "org.graalvm.python", version.ref = "graalvm-python" }
